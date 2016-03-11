@@ -38,9 +38,15 @@ perl Makefile.PL && make && make install
 
 Install
 ===============
-nginx.conf -> /etc/nginx/nginx.conf<br>
-mkdir /etc/nginx/perl<br>
-Minify.pm -> /etc/nginx/perl/
+* To copy the file `nginx.conf` into the folder `/etc/nginx/nginx.conf`
+* Create folder nginx/perl: `mkdir /etc/nginx/perl`
+* To copy the file `Minify.pm` into the folder `/etc/nginx/perl/`
+
+Specificity when choosing a platform
+===============
+* BSD and OS X (`--prefix=/usr/local/etc/nginx`)
+* Official repo Linux Nginx (`--prefix=/etc/nginx`)
+* Maintainer Ubuntu Nginx, [bug #2](https://github.com/nginx-modules/nginx-minify/issues/2) (`--prefix=/usr/share/nginx`)
 
 TODO
 ===============
